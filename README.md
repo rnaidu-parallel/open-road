@@ -64,6 +64,8 @@ Browser QA on this Mac covered all four landscapes, map transitions, precipitati
 
 Assets total approximately 74 MB and are served with the game. Google Fonts is optional; system fonts provide a fallback. See [ASSETS.md](ASSETS.md) for credits and preparation details.
 
+Production QA on 2026-09-12 at 1280×720: moving samples ranged from 29 to 38 fps across dry forest, full rain, night with radio, desert, and snowfall. All 73 deployed files returned HTTP 200; no browser errors were observed. The 48-second demo averaged 31 game frames per second while recording, with a brief minimum of 14 fps; the encoded MP4 contains about 27 frames per second. Section preparation still produced an 85 ms CPU spike. These are observations from one browser and machine, not a performance guarantee.
+
 Direct starting views are available with `?map=forest`, `?map=desert`, `?map=snow`, or `?map=night`. These only set the initial scene; menu changes during play still transition on the road.
 
 ## Record a drive
