@@ -1,0 +1,22 @@
+{
+  "asphalt_02_Diffuse.jpg": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/asphalt_02/asphalt_02_diff_2k.jpg",
+  "asphalt_02_nor_gl.jpg": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/asphalt_02/asphalt_02_nor_gl_2k.jpg",
+  "asphalt_02_Rough.jpg": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/asphalt_02/asphalt_02_rough_2k.jpg",
+  "forest_ground_04_Diffuse.jpg": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/forest_ground_04/forest_ground_04_diff_2k.jpg",
+  "forest_ground_04_nor_gl.jpg": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/forest_ground_04/forest_ground_04_nor_gl_2k.jpg",
+  "sky.hdr": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+  "storm.hdr": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/kloofendal_overcast_puresky_2k.hdr",
+  "fern_02/fern_02.gltf": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/fern_02/fern_02_1k.gltf",
+  "fern_02/textures/fern_02_arm_1k.jpg": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/fern_02/fern_02_arm_1k.jpg",
+  "fern_02/textures/fern_02_diff_1k.jpg": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/fern_02/fern_02_diff_1k.jpg",
+  "fern_02/textures/fern_02_nor_gl_1k.jpg": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/fern_02/fern_02_nor_gl_1k.jpg",
+  "fern_02/fern_02.bin": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/fern_02/fern_02.bin",
+  "sand_01_Diffuse.jpg": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/sand_01/sand_01_diff_2k.jpg",
+  "sand_01_nor_gl.jpg": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/sand_01/sand_01_nor_gl_2k.jpg",
+  "snow_02_Diffuse.jpg": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/snow_02/snow_02_diff_2k.jpg",
+  "snow_02_nor_gl.jpg": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/snow_02/snow_02_nor_gl_2k.jpg",
+  "rock_face_03_Diffuse.jpg": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rock_face_03/rock_face_03_diff_2k.jpg",
+  "rock_face_03_nor_gl.jpg": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/rock_face_03/rock_face_03_nor_gl_2k.jpg",
+  "forest_floor_Diffuse.jpg": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/forest_floor/forest_floor_diff_2k.jpg",
+  "forest_floor_nor_gl.jpg": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/forest_floor/forest_floor_nor_gl_2k.jpg"
+}

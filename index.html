@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#182322" />
+    <meta
+      name="description"
+      content="An uninterrupted drive through forest, desert and snow mountains."
+    />
+    <title>Open Road</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <main id="game" aria-label="Open Road driving game">
+      <div id="scene"></div>
+      <div class="vignette"></div>
+      <header class="hud">
+        <div class="brand">Ⅱ <span>OPEN ROAD</span></div>
+        <div class="tools">
+          <label class="sr-only" for="map">Landscape</label
+          ><span id="landscape-icon" aria-hidden="true"></span
+          ><select id="map">
+            <option value="forest">Forest</option>
+            <option value="desert">Desert</option>
+            <option value="snow">Snow mountains</option>
+            <option value="night">Night drive</option></select
+          ><button
+            id="rain"
+            role="switch"
+            aria-checked="false"
+            aria-label="Rain"
+            title="Rain · R"
+          >
+            ☂</button
+          ><button
+            id="sound"
+            aria-pressed="true"
+            aria-label="Sound"
+            title="Sound · M"
+          >
+            ♫</button
+          ><button id="camera" aria-label="Change camera" title="Camera · C">
+            ▣
+          </button>
+          <button
+            id="autopilot"
+            aria-pressed="false"
+            aria-label="Autopilot"
+            title="Autopilot · P"
+          ></button>
+          <details id="radio-panel">
+            <summary aria-label="Radio" title="Radio · B">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m5 6 13-4M3 8h18v13H3V8Zm3 4h5m-5 4h3" />
+                <circle cx="16" cy="15" r="3" />
+              </svg>
+            </summary>
+            <div class="radio-content">
+              <div class="radio-heading">
+                <span>RADIO</span
+                ><span id="radio-status" role="status">Off</span>
+              </div>
+              <label class="sr-only" for="radio-station">Radio station</label>
+              <select id="radio-station">
+                <option value="main">Simulator Radio</option>
+                <option value="rock">SR Rock</option>
+                <option value="dance">SR Dance</option>
+              </select>
+              <div class="radio-controls">
+                <button id="radio-play" aria-label="Play radio">Play</button
+                ><label for="radio-volume">Volume</label
+                ><input
+                  id="radio-volume"
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="32"
+                />
+              </div>
+              <a
+                href="https://simulatorradio.com"
+                target="_blank"
+                rel="noopener"
+                >Live from Simulator Radio ↗</a
+              >
+            </div>
+          </details>
+          <details id="help">
+            <summary aria-label="Controls and credits">?</summary>
+            <div class="help-content">
+              <p><kbd>W</kbd> Accelerate <kbd>S</kbd> Brake / reverse</p>
+              <p><kbd>A</kbd><kbd>D</kbd> Steer <kbd>C</kbd> Camera</p>
+              <p><kbd>Space</kbd> Handbrake / drift <kbd>X</kbd> Turbo</p>
+              <p><kbd>P</kbd> Autopilot <kbd>B</kbd> Radio on / off</p>
+              <p>
+                <kbd>R</kbd> Weather <kbd>M</kbd> Sound <kbd>H</kbd> Hide UI
+              </p>
+              <p>Select a landscape to drive into it. Your drive continues.</p>
+              <p>
+                X accelerates with boost. Any driving input takes over from
+                autopilot. The shoulders give you room to recover.
+              </p>
+              <p class="credits">
+                Car: SRT Performance · CC BY 4.0. Scans:
+                <a href="https://polyhaven.com">Poly Haven</a> · CC0. Trees:
+                EZ-Tree · MIT. V8:
+                <a
+                  href="https://opengameart.org/content/generic-v8-engine-sound"
+                  >DerMeehdrescher / Meehdrescher Studios</a
+                >
+                ·
+                <a href="https://creativecommons.org/licenses/by-sa/4.0/"
+                  >CC BY-SA 4.0</a
+                >. Terrain: USGS / Mapzen. Audio: TinyWorlds, Ylmir · CC0; Mike
+                Koenig/qubodup · CC BY 3.0.
+              </p>
+            </div>
+          </details>
+        </div>
+      </header>
+      <div id="loading" role="status">
+        <span class="loading-line"></span><strong>Finding the open road</strong
+        ><span id="loading-detail">Preparing the landscape…</span>
+      </div>
+      <div class="drive-prompt hud" id="drive-prompt">
+        Hold <kbd>W</kbd> to drive
+      </div>
+      <footer class="hud">
+        <div class="journey-status">
+          <span id="landscape-name">FOREST</span>
+          <span id="transition-status"></span>
+          <span id="boost"></span>
+          <span id="autopilot-status"></span>
+          <span
+            ><span id="distance">0.00</span> km
+            <span id="weather-detail">· Dry</span></span
+          >
+        </div>
+        <div class="instrument">
+          <span id="gear">1</span><strong id="speed">0</strong
+          ><span class="unit">km/h</span>
+          <div class="rev-track"><span id="rev-fill"></span></div>
+        </div>
+      </footer>
+      <div class="touch-controls hud" aria-label="Touch driving controls">
+        <button data-drive="a" aria-label="Steer left">←</button
+        ><button data-drive="d" aria-label="Steer right">→</button
+        ><button data-drive="s" aria-label="Brake / reverse">Brake / R</button
+        ><button data-drive="w" aria-label="Accelerate">Drive</button>
+      </div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

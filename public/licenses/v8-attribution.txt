@@ -1,0 +1,6 @@
+Generic V8 Engine Sound
+Sound made by DerMeehdrescher / Meehdrescher Studios.
+https://opengameart.org/content/generic-v8-engine-sound
+CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/
+Modifications: metadata removed; runtime files re-encoded to 48 kHz stereo PCM16.
+These sound derivatives are distributed under CC BY-SA 4.0.

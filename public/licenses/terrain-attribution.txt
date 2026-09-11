@@ -1,0 +1,4 @@
+United States 3DEP (formerly NED), global GMTED2010 and SRTM terrain data courtesy of the U.S. Geological Survey. Public domain.
+Mapzen Terrain Tiles, accessed 2026-09-12: https://registry.opendata.aws/terrain-tiles/
+Attribution and source details: https://github.com/tilezen/joerd/blob/master/docs/attribution.md
+Crop/resampling/vertical scaling for game scenery.

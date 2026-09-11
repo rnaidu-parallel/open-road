@@ -1,0 +1,6 @@
+.git
+node_modules
+dist
+.source-assets
+.qa
+recordings

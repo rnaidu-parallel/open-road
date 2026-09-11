@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.DS_Store
+.sites-runtime/
+.qa/
+
+.source-assets/
+.vercel/
+recordings/
+.vercel
