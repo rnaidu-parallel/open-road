@@ -362,6 +362,7 @@ footer {
   padding-left: 3px;
 }
 .tools button svg {
+  pointer-events: none;
   width: 18px;
   height: 18px;
   fill: none;

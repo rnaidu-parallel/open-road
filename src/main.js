@@ -121,7 +121,10 @@ const landscapeIcons = {
 function setLandscapeIcon(type) {
   $("#landscape-icon").innerHTML = svg(landscapeIcons[type]);
 }
+let weatherIconIsSnow;
 function setWeatherIcon(snow) {
+  if (snow === weatherIconIsSnow) return;
+  weatherIconIsSnow = snow;
   $("#rain").innerHTML = svg(
     snow
       ? '<path d="M12 2v20M3.3 7l17.4 10M3.3 17 20.7 7M9 4l3 3 3-3M9 20l3-3 3 3"/>'
@@ -406,9 +409,7 @@ function frame(now) {
         `${Math.max(0, ((state.rpm - 850) / 7150) * 100)}%`;
       $("#weather-detail").textContent =
         climate.precipitation > 0.05
-          ? snowFraction > 0.5
-            ? "· Snow"
-            : "· Rain"
+          ? `· ${snowFraction > 0.5 ? "Snow" : "Rain"}${raining ? "" : " easing"}`
           : raining
             ? "· Clouds gathering"
             : wetness > 0.05
